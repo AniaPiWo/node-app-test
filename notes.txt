@@ -1,0 +1,20 @@
+3 glowne warstwy testow
+
+- unit testy - testy pracujace na pojedynczych funkcjach, klasach, zatomizowane; apka moze wykonac te testy sama,  nie potrzeba laczenia z zewnetrznymi uslugami, bazami danych itd jest ich bardzo duzo
+- testy integracyjne - czy apka jest w stanei zintegrowac sie z czyms zewnetrznum np baza danych, serwisem, node
+- testy end-to-end - najbardziej zlozone, testuja caly ekosystem aplikacji, to co w srodku i na zewnatrz np puppeteer (test wejdzie na strone i zasymuluje uzytkownika, wypelni formularz itd)
+
+jest - runner testow 
+
+jest ma hooki:
+- np wykonanie jakiejs logiki przed lub po testach
+
+popularne metody metod jest
+not — odwraca wartość następnej operacji w łańcuchu sprawdzenia;
+expect(func(arg)).toBe(value) — sprawdzenie ścisłej równości pomiędzy zwróconą wartością func(arg) a podanym value;
+expect(func(arg)).toEqual(value) — głębokie porównanie podanych wartości
+expect(func(arg)).toBeTruthy() — sprawdza, czy podana wartość jest truthy
+expect(func(arg)).toBeNull() — sprawdza czy otrzymana wartość to null;
+expect(func(arg)).toBeUndefined() — sprawdza czy wartość to undefined;
+expect(func).toBeDefined() — sprawdza, czy funkcja/zmienna jest zdefiniowana
+
